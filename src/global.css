@@ -1,122 +1,158 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
 }
- .container {
-    padding: 20px;
-    background-color: lightblue;
-    font-size: 16px;
- }
- @media (min-width:768px){
-    .container {
-        background-color: lightblue;
-        font-size: 18px;
 
-    }
- }
- @media (min-width:1024px){
-    .container{
-        background-color: lightcoral;
-        font-size: 20px;
-    }
- }
+body {
+  background-color: #f4f4f4;
+}
 
-nav{
+/* Navbar */
+nav {
+  width: 100%;
+  height: 8vh;
+  background-color: #006d77;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+  color: #ffffff;
+  font-size: 20px;
+  position: sticky;
+  top: 0;
+}
+
+/* Layout */
+.maincontainer {
+  display: flex;
+  padding: 20px;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+/* Form Section */
+.formBlock {
+  background-color: #83c5be;
+  flex: 1;
+  min-width: 300px;
+  max-width: 400px;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.form-content {
+  margin-bottom: 15px;
+}
+
+.form-content label {
+  display: block;
+  color: #073b4c;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.form-content input,
+textarea,
+select {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #5c5c5c;
+  border-radius: 5px;
+  background-color: #ffffff;
+}
+
+button {
+  background-color: #006d77;
+  color: white;
+  border: none;
+  padding: 10px 16px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #005560;
+}
+
+/* Display Section */
+.displaySection {
+  flex: 2;
+  min-width: 300px;
+}
+
+.selectDisplayBlock {
+  background-color: #83c5be;
+  padding: 15px;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  color: #073b4c;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.selectDisplayBlock label {
+  font-weight: bold;
+  margin-right: 10px;
+}
+
+.selectDisplayBlock span {
+  margin-right: 15px;
+  font-size: 14px;
+}
+
+.displayBlock {
+  background-color: #edf6f9;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.displayNotes {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.output {
+  background-color: #006d77;
+  padding: 15px;
+  color: white;
+  border-radius: 10px;
+  width: 100%;
+  max-width: 300px;
+}
+
+.output h1 {
+  text-decoration: underline;
+  font-size: 18px;
+}
+
+.output p {
+  font-size: 14px;
+  margin-top: 4px;
+}
+
+.output .btn {
+  margin-top: 10px;
+  display: flex;
+  gap: 10px;
+}
+
+.output button {
+  font-size: 12px;
+  padding: 6px 10px;
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+  .maincontainer {
+    flex-direction: column;
+  }
+
+  .formBlock,
+  .displaySection {
     width: 100%;
-    height: 8vh;
-    background-color: cadetblue;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px;
-    color: whitesmoke;
-    font-size: 20px;
-    position: sticky;
-    top: 0;
-}
-.maincontainer{
-    display: flex;
-}
-.formBlock{
-    background-color: cadetblue;
-    width: 40%;
-    height: 500px;
-    border-radius: 2px;
-    margin: 40px;
-}
-.form-content{
-    margin: 20px;
-
-}
-
-.form-content label{
-    color: whitesmoke;
-    display: block;
-    font-size: 20px;
-    margin-left: 12px;
-    padding-top: 10px;
-}
-.form-content input,textarea{
-    border: none;
-    border: 1px solid rgb(75,70,70);
-    width: 90%;
-    border-radius: 2px;
-    padding: 12px;
-    margin-left: 12px;
-}
-.form-content select{
-    margin-left: 12px;
-}
-button{
-    margin-left: 30px;
-    padding: 10px;
-}
-.displaySection{
-    width: 50%;
-}
-.selectDisplayBlock{
-    background-color: cadetblue;
-    display: flex;
-    align-items: center;
-    margin-top: 40px;
-    margin-left: 10px;
-    color: whitesmoke;
-}
-.selectDisplayBlock label{
-    display: inline;
-    font-size: 18px;
-    padding: 2px;
-    margin: 1px;
-}
-.selectDisplayBlock span{
-    font-size: 17px;
-    padding: 3px;
-    margin: 5px;
-}
-.displayBlock{
-    width: 98.9%;
-    margin-left: 10px;
-    background-color: rgb(54, 111, 113);
-}
-.displayNotes{
-    display: flex;
-    flex-wrap: wrap;
-    padding: 10px;
-}
-.output{
-  display: inline;
-  justify-content: space-around;
- color: rgb(248, 247, 244);
- padding: 10px;
-}
-.output h1{
-    color: rgb(237, 229, 229);
-    text-decoration: underline;
-} .output p{
-    color: rgb(240, 236, 236);
-} .output button{
-    background-color: rgb(139, 164, 186);
-    font-size:11px ;
-    border-radius: 10px;
+  }
 }

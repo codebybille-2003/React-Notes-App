@@ -1,7 +1,7 @@
 {
   "name": "notes-taking-app",
   "private": true,
-  "homepage": "https://github.com/codebybille-2003/My_React_Notes_App",
+  "homepage": "https://github.com/codebybille-2003/React_Notes_App",
   "version": "0.0.0",
   "type": "module",
   "scripts": {

@@ -8,9 +8,7 @@ import TaskProvider from './TaskProvider'
 const App = () => {
   return (
    <>
-   <div className="container">
-    
-   </div>
+  
    <Navbar/>
  <TaskProvider>
  <main className="maincontainer">
