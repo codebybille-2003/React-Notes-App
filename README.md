@@ -1,8 +1,55 @@
-# React + Vite
+# React Notes App 📝
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A simple, responsive, and clean Notes app built using **React**. Users can create, edit, delete, and filter notes based on categories. Data is stored in **localStorage**, so your notes are safe even after refreshing!
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🔗 GitHub Repository
+[https://github.com/codebybille-2003/React-Notes-App](https://github.com/codebybille-2003/React-Notes-App)
+
+## 🔗 Live Demo
+[https://codebybille-2003.github.io/React-Notes-App/](https://codebybille-2003.github.io/React-Notes-App/)
+
+---
+
+## ⚙️ Features
+
+- 📝 Add new notes with **title**, **description**, and **category**
+- ✏️ Edit or 🗑️ Delete any note
+- 🔍 Filter notes by category (All, General, Official, Technical)
+- 💾 Notes saved using **localStorage**
+- 🆔 Unique note IDs generated using `uuid`
+
+---
+
+## 🚀 Technologies Used
+
+- React (Hooks + Functional Components)
+- Context API for state management
+- UUID for unique IDs
+- LocalStorage for persistence
+- CSS for styling
+
+---
+
+## 🗂️ Folder Structure
+
+src/
+├── App.js
+├── Navbar.js
+├── Form.js
+├── DisplayNotes.js
+├── TaskProvider.js
+├── global.css
+└── index.js
+
+---
+
+## 📦 Installation
+
+```bash
+git clone https://github.com/codebybille-2003/React-Notes-App.git
+cd React-Notes-App
+npm install
+npm run dev
+```
